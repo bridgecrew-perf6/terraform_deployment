@@ -1,13 +1,9 @@
 terraform {
-  cloud {
+  backend "remote" {
     organization = "leonms"
 
     workspaces {
       name = "terraform-api"
     }
   }
-}
-
-output "Test" {
-  value = "Hello World!"
 }
