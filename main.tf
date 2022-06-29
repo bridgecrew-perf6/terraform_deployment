@@ -1,12 +1,9 @@
-# The configuration for the `remote` backend.
 terraform {
-  backend "remote" {
-    # The name of your Terraform Cloud organization.
+  cloud {
     organization = "leonms"
 
-    # The name of the Terraform Cloud workspace to store Terraform state files in.
     workspaces {
-      name = "terraform_deployment"
+      name = "terraform-api"
     }
   }
 }
