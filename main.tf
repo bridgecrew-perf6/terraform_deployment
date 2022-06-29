@@ -11,10 +11,6 @@ terraform {
   }
 }
 
-credentials "app.terraform.io" {
-  token = " $secrets.GOOGLE_CREDENTIALS "
-}
-
 # An example resource that does nothing.
 resource "null_resource" "example" {
   triggers = {
